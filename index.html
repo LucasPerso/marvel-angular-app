@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="MarvelApp">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marvel App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Marvel:700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-static-top" role="navigation" ng-controller="NavbarController">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          Marvel App
+        </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li ng-class="{ active: isActive('/comics')}"><a href="/comics">Comics</a></li>
+        <li ng-class="{ active: isActive('/creators')}"><a href="/creators">Creators</a></li>
+      </ul>
+    </div>
+    <div ng-view></div>
+    <footer>
+      <div class="container">
+        <p>Data provided by Marvel. © 2015 MARVEL</p>
+      </div>
+    </footer>
+    <div id="loaderDiv" loader>
+        <img src="img/ajax-loader.gif" class="ajax-loader"/>
+    </div>
+  </body>
+  <script src="vendor/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="vendor/bootstrap-sass/assets/javascripts/bootstrap.js" charset="utf-8"></script>
+  <script src="vendor/angular/angular.js" charset="utf-8"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js" charset="utf-8"></script>
+  <script src="vendor/angular-route/angular-route.js" charset="utf-8"></script>
+  <script src="vendor/angular-resource/angular-resource.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
+  <script src="js/controllers/navbar-controller.js" charset="utf-8"></script>
+  <script src="js/controllers/comic-controller.js" charset="utf-8"></script>
+  <script src="js/controllers/creators-controller.js" charset="utf-8"></script>
+  <script src="js/controllers/search-controller.js" charset="utf-8"></script>
+  <script src="js/services/loader.js" charset="utf-8"></script>
+  <script src="js/services/marvel-comic-api.js" charset="utf-8"></script>
+  <script src="js/services/marvel-creator-api.js" charset="utf-8"></script>
+  <script src="js/directives/search-alphabet.js" charset="utf-8"></script>
+  <script src="js/directives/loading.js" charset="utf-8"></script>
+</html>
