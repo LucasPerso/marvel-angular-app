@@ -2,13 +2,11 @@
 A small web-app using Angular and Marvel API.
 
 ## Libraries required
-------
 
 To run this app properly, you need to install nodeJS and bower.
 
 
 ## Installation
-------
 
 Change the value of MarvelApiKey with your own public key in js/app.js
 Then run 
@@ -19,7 +17,7 @@ node server.js
 ```
 
 ## Ideas to develop
-------
+
 *Search on entire DB
 *Add series, stories, events, characters pages
 
