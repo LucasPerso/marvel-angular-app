@@ -18,8 +18,8 @@ node server.js
 
 ## Ideas to develop
 
-*Search on entire DB
-*Add series, stories, events, characters pages
+* Search on entire DB
+* Add series, stories, events, characters pages
 
 In your browser, head to localhost:3000 to see the app running
 
