@@ -2,7 +2,7 @@ angular.module('MarvelApp', ['ngResource', 'ngRoute', 'ui.bootstrap'])
   .config(['$locationProvider', '$routeProvider', '$httpProvider', function($locationProvider, $routeProvider, $httpProvider) {
 
     // Put your API key
-    window.MarvelApiKey = '8ee35a566b7f8c8522e9a12db77fceec';
+    window.MarvelApiKey = 'yourPublicKeyHere';
 
     $locationProvider.html5Mode(true);
     $httpProvider.interceptors.push('httpInterceptor');
